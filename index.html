@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS's Blog</title>
   </head>
+  <style>
+    #menubarSubmenus {
+      display: none;
+    }
+  </style>
   <body>
-    helloWorld!
+    <div id="menubar">
+      <ul>
+        <li>
+          <a class="menu">Menu 1</a>
+          <div class="menubarSubmenus"><p>Submenu 1</p></div>
+        </li>
+        <li>
+          <a class="menu">Menu 2</a>
+          <div class="menubarSubmenus"><p>Submenu 2</p></div>
+        </li>
+      </ul>
+    </div>
   </body>
+  <script src="menu.js"></script>
 </html>
