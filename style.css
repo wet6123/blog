@@ -49,12 +49,12 @@ a {
 .navbar__menu > li {
   font-size: 17px;
   text-align: center;
-  width: 108px;
+  /* width: 108px; */
   padding: 18px 0px;
   margin: 0px 25px;
 }
 
-#navbar__menu__hover > a {
+.navbar__menu a:hover {
   border-bottom: 2px solid var(--logo-color);
 }
 
@@ -62,7 +62,7 @@ a {
   list-style: none;
   color: var(--text-color);
   display: flex;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .navbar__icon > li {
