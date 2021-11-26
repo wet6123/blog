@@ -4,26 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS's Blog</title>
+    <title>Document</title>
+    <!-- 아이콘 사용 -->
+    <script
+      src="https://kit.fontawesome.com/55084df7fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    #menubarSubmenus {
-      display: none;
-    }
-  </style>
   <body>
-    <div id="menubar">
-      <ul>
-        <li>
-          <a class="menu">Menu 1</a>
-          <div class="menubarSubmenus"><p>Submenu 1</p></div>
-        </li>
-        <li>
-          <a class="menu">Menu 2</a>
-          <div class="menubarSubmenus"><p>Submenu 2</p></div>
-        </li>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-ambulance"></i>
+        <a href="index.html">Covid-19</a>
+      </div>
+
+      <ul class="navbar__menu">
+        <li class="navbar__menu__sub"><a href="">뉴스&이슈</a></li>
+        <li class="navbar__menu__sub"><a href="">TIL</a></li>
+        <li class="navbar__menu__sub"><a href="">알고리즘</a></li>
+        <li class="navbar__menu__sub"><a href="">기술면접자료</a></li>
+        <li class="navbar__menu__sub"><a href="">잡담</a></li>
       </ul>
-    </div>
+
+      <div class="navbar__icon">
+        <!-- 아이콘 추가할것 -->
+        <li>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href="http://github.com/wet6123"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </li>
+      </div>
+    </nav>
   </body>
-  <script src="menu.js"></script>
+  <!-- js -->
+  <script src="./menuExpend.js"></script>
 </html>
