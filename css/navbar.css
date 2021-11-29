@@ -2,7 +2,7 @@
   --text-color: white;
   --sub-text-color: #263343;
   --background-color: #263343;
-  --logo-color: #f9f3df;
+  --logo-color: #89b9a8;
   --sub-menu-line: #435974;
 }
 
@@ -29,9 +29,10 @@ a {
 
 .navbar__logo {
   font-size: 24px;
+  padding: 8px 0px;
 }
 
-.navbar__logo i {
+.navbar__logo :hover {
   color: var(--logo-color);
 }
 
@@ -67,4 +68,45 @@ a {
 
 .navbar__icon > li {
   padding: 8px 12px;
+}
+
+.navbar__menuToggle {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 32px;
+  font-size: 24px;
+}
+
+.navbar__menuToggle :hover {
+  color: var(--logo-color);
+}
+
+@media screen and (max-width: 840px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__icon {
+    display: none;
+    justify-content: right;
+    width: 100%;
+  }
+
+  .navbar__menuToggle {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icon.active {
+    display: flex;
+  }
 }
